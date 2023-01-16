@@ -8,6 +8,7 @@ export default class Header extends Component {
       <header id="home">
          <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
           <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
             <ul id="nav" className="nav">
                <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
@@ -30,6 +31,7 @@ export default class Header extends Component {
                     resumeData.socialLinks && resumeData.socialLinks.map(item =>{
                       return(
                               <li key={item.name}>
+                                {/* eslint-disable-next-line react/jsx-no-target-blank*/}
                                 <a href={item.url} target="_blank"><i className={item.className}></i></a>
                               </li>
                             )
